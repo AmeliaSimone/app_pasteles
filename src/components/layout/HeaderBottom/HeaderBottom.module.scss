@@ -1,0 +1,13 @@
+.header_bottom{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0 20px;
+    height: 60px;
+    box-shadow: 0 4px 5px -2px #666666;
+
+    h2{
+        font-size: 24px;
+        font-weight: 400;
+    }
+}
