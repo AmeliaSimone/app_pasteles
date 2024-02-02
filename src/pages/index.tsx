@@ -7,12 +7,20 @@ import Icon from "@/components/ui/Icon";
 import HeaderBottom from "@/components/layout/HeaderBottom";
 import ComboBox from "@/components/ui/ComboBox";
 import Capsule from "@/components/ui/Capsule";
+import {
+  Table,
+  TableHeader,
+  TableDetail,
+  TableRow,
+  TableCell,
+  TableCellEnd
+} from "@/components/layout/Table";
 
 export default function Home() {
   return (
     <>
-      <Screen>
-        <ContentCell>
+      <Screen align="center">
+        <ContentCell align="center">
           <HeaderTop width="100%">
             <ContentRow>
               <Icon name="menu" color="#979797"></Icon>
@@ -24,7 +32,6 @@ export default function Home() {
               <Icon name="person" color="#979797"></Icon>
             </ContentRow>
           </HeaderTop>
-
           <HeaderBottom>
             <ContentRow>
               <h2>Pedido N°4 (26/01/2024)</h2>
@@ -51,7 +58,61 @@ export default function Home() {
         </ContentCell>
 
         <ContentRow>
-          <ContentCell></ContentCell>
+          <ContentCell>
+            <Table height="556px">
+              <TableHeader>
+                <TableCell width="50px">#</TableCell>
+                <TableCell width="90px">Fecha/Hora</TableCell>
+                <TableCell width="348px">Torta/Solicitante</TableCell>
+                <TableCell width="70px">Precio</TableCell>
+                <TableCellEnd></TableCellEnd>
+              </TableHeader>
+              <TableDetail>
+                <TableRow>
+                  <TableCell width="50px">#</TableCell>
+                  <TableCell width="90px">Fecha/Hora</TableCell>
+                  <TableCell width="348px">Torta/Solicitante</TableCell>
+                  <TableCell width="70px">Precio</TableCell>
+                </TableRow>
+                <TableRow>
+                  <TableCell width="50px">#</TableCell>
+                  <TableCell width="90px">Fecha/Hora</TableCell>
+                  <TableCell width="348px">Torta/Solicitante</TableCell>
+                  <TableCell width="70px">Precio</TableCell>
+                </TableRow>
+                <TableRow>
+                  <TableCell width="50px">#</TableCell>
+                  <TableCell width="90px">Fecha/Hora</TableCell>
+                  <TableCell width="348px">Torta/Solicitante</TableCell>
+                  <TableCell width="70px">Precio</TableCell>
+                </TableRow>
+                <TableRow>
+                  <TableCell width="50px">#</TableCell>
+                  <TableCell width="90px">Fecha/Hora</TableCell>
+                  <TableCell width="348px">Torta/Solicitante</TableCell>
+                  <TableCell width="70px">Precio</TableCell>
+                </TableRow>
+                <TableRow>
+                  <TableCell width="50px">#</TableCell>
+                  <TableCell width="90px">Fecha/Hora</TableCell>
+                  <TableCell width="348px">Torta/Solicitante</TableCell>
+                  <TableCell width="70px">Precio</TableCell>
+                </TableRow>
+                <TableRow>
+                  <TableCell width="50px">#</TableCell>
+                  <TableCell width="90px">Fecha/Hora</TableCell>
+                  <TableCell width="348px">Torta/Solicitante</TableCell>
+                  <TableCell width="70px">Precio</TableCell>
+                </TableRow>
+                <TableRow>
+                  <TableCell width="50px">#</TableCell>
+                  <TableCell width="90px">Fecha/Hora</TableCell>
+                  <TableCell width="348px">Torta/Solicitante</TableCell>
+                  <TableCell width="70px">Precio</TableCell>
+                </TableRow>
+              </TableDetail>
+            </Table>
+          </ContentCell>
           <ContentCell marginTop="15px">
             <ContentRow>
               <TextBox
