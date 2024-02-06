@@ -2,33 +2,33 @@ import React from 'react'
 
 import styles from "./Table.module.scss"
 
-const Table = ({ children, height, width }: any) => {
+const Table = ({ children, height, width, gap }: any) => {
     return (
-        <div className={styles.table} style={{ height: height, width: width }}>{children}</div>
+        <div className={styles.table} style={{ height: height, width: width, gap:gap }}>{children}</div>
     );
 };
 
-const TableHeader = ({ children }: any) => {
+const TableHeader = ({ children, gap }: any) => {
     return (
-        <div className={styles['table-header']}>{children}</div>
+        <div className={styles['table-header']} style={{gap:gap }}>{children}</div>
     );
 };
 
-const TableDetail = ({ children }: any) => {
+const TableDetail = ({ children, gap }: any) => {
     return (
-        <div className={styles["table-detail"]}>{children}</div>
+        <div className={styles["table-detail"]} style={{ gap:gap }}>{children}</div>
     );
 };
 
-const TableRow = ({ children }: any) => {
+const TableRow = ({ children, gap }: any) => {
     return (
-        <div className={styles["table-row"]}>{children}</div>
+        <div className={styles["table-row"]} style={{gap:gap }}>{children}</div>
     );
 };
 
-const TableCell = ({ children, width, aling }: any) => {
+const TableCell = ({ children, width, aling, gap }: any) => {
     return (
-        <div className={styles["table-cell"]} style={{ width: width, justifyContent: aling }}>{children}</div>
+        <div className={styles["table-cell"]} style={{ width: width, justifyContent: aling, gap:gap }}>{children}</div>
     );
 };
 

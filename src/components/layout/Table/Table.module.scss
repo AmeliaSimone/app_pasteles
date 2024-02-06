@@ -1,76 +1,68 @@
 .table {
+  display: flex;
+  flex-direction: column;
+  background-color: white;
+  border: 1px solid #cccccc;
+  max-height: 630px;
+  padding: 2px;
+
+  .table-header {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 50px;
+    color: #666666;
+    font-size: 15px;
+    padding: 0 0 2px 0;
+
+    .table-cell {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      height: 100%;
+      padding: 10px;
+      font-size: 16px;
+      background-color: #ededed;
+    }
+
+    .table-cell-end {
+      background-color: #ededed;
+      width: 5px;
+      height: 100%;
+    }
+  }
+
+  .table-detail {
     display: flex;
     flex-direction: column;
-    background-color: white;
-    margin-top: 63px;
-    height: 630px;
-    gap: 2px;
-    padding: 2px 2px 0 2px;
-    margin-bottom: 45px;
-    border: 1px solid #CCCCCC;
+    width: 100%;
+    overflow-y: scroll;
 
-    .table-header {
+    .table-row {
+      display: flex;
+
+      &:nth-child(odd) .table-cell {
+        background-color: #F5F5FF;
+      }
+      &:nth-child(even) .table-cell {
+        background-color: #FAFAFF;
+      }
+
+      &:hover .table-cell {
+        background-color: black;
+        color: white;
+      }
+
+      .table-cell {
         display: flex;
         align-items: center;
-        justify-content: center;
-        height: 50px;
-        background-color: #ededed;
-        padding: 2px;
-        left: 2px;
-        color: #666666;
+        font-family: "oswald";
+        font-weight: 400;
+        color: #979797;
+        padding: 10px;
         font-size: 15px;
-        
-
-        .table-cell {
-            display: flex;
-            justify-content: center;
-            align-items: center;
-            gap: 2px;
-            height: 70px;
-            padding: 10px;
-            font-size: 16px;
-        }
-
-        .table-cell-end {
-            background-color: #ECECEC;
-            width: 5px;
-            height: 35px;
-        }
+        height: 70px;
+      }
     }
-
-    .table-detail {
-        display: flex;
-        flex-direction: column;
-        gap: 2px;
-        overflow: hidden;
-        overflow-y: scroll;
-        height: calc(100% - 35px - 2px);
-        color: #959595;
-
-        .table-row {
-            display: flex;
-            gap: 2px;
-
-            &:nth-child(odd) .table-cell {
-                background-color: white;
-            }
-
-            &:hover .table-cell {
-                background-color: black;
-                color: white;
-            }
-
-            .table-cell {
-                display: flex;
-                align-items: center;
-                font-family: 'oswald';
-                font-weight: 200;
-                font-size: 18px;
-                color: #979797;
-                height: 70px;
-                padding: 10px;
-                font-size: 16px;
-            }
-        }
-    }
+  }
 }

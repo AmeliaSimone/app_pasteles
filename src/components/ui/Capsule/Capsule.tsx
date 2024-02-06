@@ -1,10 +1,31 @@
-import React from 'react'
+import React from "react";
 
-import styles from "./Capsule.module.scss"
+import styles from "./Capsule.module.scss";
 
-const Capsule = ({height, width, color, backgroundColor, text}:any) => {
+const Capsule = ({
+  iconName,
+  height,
+  width,
+  color,
+  backgroundColor,
+  text,
+  borderRadius
+}: any) => {
   return (
-    <div className={styles["capsule"]} style={{height:height, width: width, color: color, backgroundColor: backgroundColor}}>{text}</div>
+    <div
+      className={styles["capsule"]}
+      style={{
+        height: height,
+        width: width,
+        color: color,
+        backgroundColor: backgroundColor, borderRadius: borderRadius
+      }}
+    >
+      <span className="material-icons" style={{ fontSize:"24px", color: color }}>
+        {iconName}
+      </span>
+      {text}
+    </div>
   );
 };
 
