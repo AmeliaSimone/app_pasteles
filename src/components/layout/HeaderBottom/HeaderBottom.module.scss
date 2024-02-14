@@ -1,6 +1,6 @@
 .header_bottom{
     display: flex;
-    align-items: center;
+    width: 100%;
     justify-content: space-between;
     padding: 0 20px;
     height: 60px;
@@ -11,3 +11,15 @@
         font-weight: 400;
     }
 }
+
+
+@media (width < 1200px){
+    .header_bottom{
+        height: 160px;
+        flex-wrap: wrap;
+        justify-content: center;
+        
+        
+    }
+}
+

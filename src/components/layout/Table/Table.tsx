@@ -2,9 +2,9 @@ import React from 'react'
 
 import styles from "./Table.module.scss"
 
-const Table = ({ children, height, width, gap }: any) => {
+const Table = ({ children, height, width, gap, className }: any) => {
     return (
-        <div className={styles.table} style={{ height: height, width: width, gap:gap }}>{children}</div>
+        <div className={`${styles.table} ${className}`} style={{ height: height, width: width, gap:gap }}>{children}</div>
     );
 };
 

@@ -9,11 +9,12 @@ const Capsule = ({
   color,
   backgroundColor,
   text,
-  borderRadius
+  borderRadius,
+  className
 }: any) => {
   return (
     <div
-      className={styles["capsule"]}
+      className={`${styles.capsule} ${className}`}
       style={{
         height: height,
         width: width,
