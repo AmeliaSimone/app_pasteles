@@ -4,6 +4,7 @@
     gap: 15px;
 }
 
+
 .table {
     div[class*="table-header"] {
         gap: 2px;
@@ -134,16 +135,17 @@
 
 @media (width < 1200px) {
     .body {
-        flex-direction: column;
+        flex-direction: column-reverse;
         align-items: center;
         gap: 15px;
         height: auto;
         width: 405px;
+        padding-top: 15px;
         
     }
 
     .columns {
-        flex-direction: column;
+        flex-direction: column-reverse;
     }
 
     .content_cell {
@@ -161,6 +163,7 @@
         width: 400px;
         height: 330px;
        margin-top: 15px;
+       margin-bottom: 30px;
 
         div[class*="table-header"] {
             gap: 2px;

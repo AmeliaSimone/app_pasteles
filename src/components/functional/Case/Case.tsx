@@ -25,7 +25,7 @@ import styles from "./Case.module.scss";
 export const Case = () => {
   return (
     <Screen align="center">
-      <ContentCell align="center">
+      <ContentCell>
         <HeaderTop width="100%">
           <ContentRow>
             <Icon iconName="menu" color="#959595"></Icon>
@@ -37,9 +37,7 @@ export const Case = () => {
             <Icon iconName="person" color="#959595"></Icon>
           </ContentRow>
         </HeaderTop>
-      </ContentCell>
 
-      <ContentCell>
         <HeaderBottom>
           <ContentRow>
             <h2>Pedido N°4 (26/01/2024)</h2>
@@ -65,7 +63,9 @@ export const Case = () => {
             />
           </ContentRow>
         </HeaderBottom>
+      </ContentCell>
 
+      <ContentCell className={styles.content_cell}>
         <ContentRow className={styles.body} align="center">
           <ContentCell>
             <Table className={styles.table}>
@@ -231,12 +231,12 @@ export const Case = () => {
                       className={styles.comboBoxRelleno}
                     />
                   </ContentRow>
-                  <ContentRow >
+                  <ContentRow>
                     <ComboBox
                       label="Extra"
                       data={[":: Seleccione ::", "Otro Item"]}
                       className={styles.comboBoxExtra}
-                    /> 
+                    />
                   </ContentRow>
                 </ContentCell>
                 <ContentCell>
