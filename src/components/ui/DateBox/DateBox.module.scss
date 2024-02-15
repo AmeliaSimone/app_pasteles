@@ -29,6 +29,7 @@
     font-size: 16px;
     color: #5c5c5c;
     width: 100%;
+    color: #959595;
 
     &:hover {
       background-color: #fdfae4;
@@ -44,4 +45,12 @@
     font-size: 12px;
     color: #3274ff;
   }
+}
+
+@media (width < 420px){
+    .dateBox{
+        input{
+            font-size: 14px;
+        }
+    }
 }

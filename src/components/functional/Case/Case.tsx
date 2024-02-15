@@ -24,7 +24,7 @@ import styles from "./Case.module.scss";
 
 export const Case = () => {
   return (
-    <Screen align="center">
+    <Screen align="center" >
       <ContentCell>
         <HeaderTop width="100%">
           <ContentRow>
@@ -153,7 +153,7 @@ export const Case = () => {
               </TableDetail>
             </Table>
           </ContentCell>
-          <ContentCell gap="15px">
+          <ContentCell gap="20px">
             <ContentRow gap="5px">
               <TextBox
                 label="Buscar nota"
@@ -166,8 +166,8 @@ export const Case = () => {
                 className={styles.capsule}
               />
             </ContentRow>
-            <ContentRow gap="15px">
-              <ContentCell gap="15px">
+            <ContentRow gap="20px">
+              <ContentCell gap="20px">
                 <ContentCell>
                   <ContentRow gap="5px">
                     <TextBox
@@ -252,7 +252,7 @@ export const Case = () => {
                   />
                 </ContentCell>
               </ContentCell>
-              <ContentCell gap="15px">
+              <ContentCell gap="20px">
                 <ContentCell>
                   <ContentRow>
                     <ComboBox

@@ -12,3 +12,10 @@
     gap: 5px;
     cursor: pointer;
 }
+
+@media (width < 420px){
+    .capsule{
+        font-size: 15px;
+        
+    }
+}

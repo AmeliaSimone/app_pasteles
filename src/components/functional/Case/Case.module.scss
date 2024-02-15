@@ -193,7 +193,7 @@
                         display: none;
                     }
                     &:nth-child(3) {
-                        width: 320px;
+                        width: 300px;
                     }
                     &:nth-child(4) {
                         width: 70px;
@@ -210,7 +210,7 @@
         width: 200px;
     }
     .dateBoxFecha{
-        width: 355px;
+        width: 360px;
     }
 
     .textBoxSearch {
@@ -293,3 +293,170 @@
         width: 200px;
     }
 }
+
+@media (width < 420px) {
+
+    .body {
+        flex-direction: column-reverse;
+        align-items: center;
+        gap: 10px;
+        height: auto;
+        width: 350px;
+        padding-top: 15px;
+        
+        
+    }
+
+    .columns {
+        flex-direction: column-reverse;
+    }
+
+    .content_cell {
+        display: flex;
+        align-items: center;
+        
+        
+    }
+
+    .content_row {
+        width: 350;
+        align-items: center;
+    }
+
+    .table {
+        width: 350px;
+        height: 330px;
+       margin-top: 15px;
+       margin-bottom: 30px;
+
+        div[class*="table-header"] {
+            gap: 2px;
+            div[class*="table-cell"] {
+                font-size: 14px;
+                &:nth-child(1) {
+                    width: 45px;
+                }
+                &:nth-child(2) {
+                    display: none;
+                }
+                &:nth-child(3) {
+                    width: 250px;
+                }
+                &:nth-child(4) {
+                    width: c;
+                }
+            }
+        }
+
+        div[class*="table-detail"] {
+            div[class*="table-row"] {
+                div[class*="table-cell"] {
+                    font-size: 12px;
+                    &:nth-child(1) {
+                        width: 45px;
+                    }
+                    &:nth-child(2) {
+                        display: none;
+                    }
+                    &:nth-child(3) {
+                        width: 250px;
+                    }
+                    &:nth-child(4) {
+                        width: 50px;
+                    }
+                }
+            }
+        }
+    }
+    
+    .textBoxBuscar{
+        width:calc(175px - 5px);    
+    }
+    .comboBoxSuc{
+        width:calc(175px - 5px);
+    }
+    .dateBoxFecha{
+        width: calc(305px - 5px);
+    }
+
+    .textBoxSearch {
+        width: calc(240px - 5px);
+    }
+    .capsule {
+        width: 110px;
+    }
+    .textBoxRut {
+        width: 350px;
+    }
+    .textBoxName {
+        width: 350px;
+    }
+    .textBoxEmail {
+        width: 350px;
+    }
+    .textBoxPhone {
+        width: 350px;
+    }
+    .comboBoxForma{
+        width: calc(175px - 5px);
+    }
+    .comboBoxSize{
+        width: 175px;
+    }
+    .comboBoxMasa{
+        width: calc(175px - 5px);
+    }
+    .comboBoxSabor{
+        width: 175px;
+    }
+    .comboBoxRelleno{
+        width: 175px;
+    }
+    .comboBoxCream{
+        width: calc(175px - 5px);
+    }
+    .comboBoxExtra{
+        width: 350px;
+        
+    }
+    .textBoxMessage{
+        width: 350px;
+    }
+    .textBoxAdi{
+        width: 350px;
+    }
+    .comboBoxSucursal{
+        width: 350px;
+    }
+    .comboBoxDate{
+        width: calc(175px - 5px);
+    }
+    .comboBoxHour{
+        width: 175px;
+    }
+    .textBoxPrice{
+        width: calc(175px - 5px);
+    }
+    .textBoxAbono{
+        width: 175px;
+    }
+    .comboBoxPay{
+        width: 350px;
+    }
+    .textBoxPaymentStatus{
+        width: 350px;
+    }
+    .textBoxOrderStatus{
+        width: 350px;
+    }
+    .textBoxUser{
+        width: 350px;
+    }
+    .textBoxDate{
+        width: calc(175px - 5px);
+    }
+    .textBoxHour{
+        width: 175px;
+    }
+}
+
